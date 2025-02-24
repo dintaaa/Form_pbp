@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Form Pendaftaran</title>
+</head>
+<style>
+    label {
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <center>
+        <img src="image.png" alt="background" width="1140px" height="350px" >
+    </center>
+    <div style="background-color: #ffffff" class="container p-3 my-3 border">
+        <h1 class="text-center">Form Pendaftaran Wisuda</h1>
+        <form id="form" method="POST">
+            <!--Data Pribadi-->
+            <div class=" alert alert-primary">
+                <strong>Data Diri</strong>
+            </div>
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="form-group">
+                        <label>Nama lengkap: </label>
+                        <input type="text" name="nama" class="form-control" placeholder="Masukkan nama lengkap anda">
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        <label>Nomor Induk Mahasiswa (NIM): </label>
+                        <input type="text" name="nik" class="form-control" placeholder="Masukkan nomor NIk anda">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div form="form-group">
+                        <label>Tempat Lahir: </label>
+                        <input type="text" name="tempat_lahir" class="form-control"
+                            placeholder="Masukkan tempat lahir anda">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label>Tanggal Lahir: </label>
+                        <input type="date" name="tanggal_lahir" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label>Status: </label>
+                        <select class="form-control" name="status">
+                            <option>Pilih</option>
+                            <option value="Aktif">Aktif</option>
+                            <option value="Non-aktif">Non-aktif</option>
+                            <option value="Cuti">Cuti</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label>Study: </label>
+                        <select class="form-control" name="status">
+                            <option>Pilih</option>
+                            <option value="D3">D3</option>
+                            <option value="D4">D4</option>
+                            <option value="S1">S1</option>
+                            <option value="S2">S2</option>
+                            <option value="S3">S3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label>Jenis Kelamin: </label>
+                        <br>
+                        <input type="radio" name="jk" value="Laki-Laki">Laki-laki
+                        <br>
+                        <input type="radio" name="jk" value="Perempuan">Perempuan
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label>Agama: </label>
+                        <select class="form-control" name="agama">
+                            <option>Pilih</option>
+                            <option value="Islam">Islam</option>
+                            <option value="Kristen">Kristen</option>
+                            <option value="Katolik">Katolik</option>
+                            <option value="Budha">Budha</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Konghucu">Konghucu</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label>Kewarganegaraan: </label>
+                        <br>
+                        <input type="radio" name="kwn">Warga Negara Indonesia (WNI)
+                        <br>
+                        <input type="radio" name="kwn">Warga Negara Asing (WNA)
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label>Email: </label>
+                        <input type="email" name="email" class="form-control" placeholder="Masukkan Email Anda">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label>Nomor Handphone: </label>
+                        <input type="tel" class="form-control" placeholder="Masukkan nomor hp anda">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label>Pas foto 3x4: </label>
+                        <input type="file" class="form-control-file">
+                    </div>
+                </div>
+            </div>
+
+            <!--Data Domisili-->
+            <div class="alert alert-primary">
+                <strong>Data Domisili</strong>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label>Alamat: </label>
+                        <textarea class="form-control" name="alamat_rumah" rows="4" id="alamat"
+                            placeholder="Masukkan alamat anda"></textarea>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label>Kode Pos: </label>
+                        <input type="text" name="kode_pos" class="form-control" placeholder="Kode Pos">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <label>Kecamatan: </label>
+                    <input type="text" name="kec" class="form-control" placeholder="Masukkan kecamatan anda">
+                </div>
+                <div class="col-sm">
+                    <label>Kabupaten: </label>
+                    <input type="text" name="kabu" class="form-control" placeholder="Masukkan kabupaten anda">
+                </div>
+                <div class="col-sm">
+                    <label>Provinsi: </label>
+                    <input type="text" name="prov" class="form-control" placeholder="Masukkan provinsi anda">
+                </div>
+            </div>
+            <br>
+
+            <!--Data Pendidikan Terakhir-->
+            <div class="alert alert-primary">
+                <strong>Program Study</strong>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label>Fakultas: </label>
+                        <select class="form-control" name="fakultas">
+                            <option>Pilih</option>
+                            <option value="Fakultas Teknik">Fakultas Teknik</option>
+                            <option value="Fakultas Ekonomi">Fakultas Ekonomi</option>
+                            <option value="Fakultas Kedokteran">Fakultas Kedokteran</option>
+                            <option value="Fakultas Hukum">Fakultas Hukum</option>
+                            <option value="Fakultas Ilmu Sosial dan Politik">Fakultas Ilmu Sosial dan Politik</option>
+                            <option value="Fakultas Ilmu Komunikasi">Fakultas Ilmu Komunikasi</option>
+                            <option value="Fakultas Psikologi">Fakultas Psikologi</option>
+                            <option value="Fakultas Pertanian">Fakultas Pertanian</option>
+                            <option value="Fakultas Farmasi">Fakultas Farmasi</option>
+                            <option value="Fakultas Sastra">Fakultas Sastra</option>
+                            <option value="Fakultas Keguruan dan Ilmu Pendidikan">Fakultas Keguruan dan Ilmu Pendidikan
+                            </option>
+                            <option value="Fakultas Ilmu Komputer">Fakultas Ilmu Komputer</option>
+                        </select>
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label>Jurusan</label>
+                        <input type="text" class="form-control" placeholder="Masukkan jurusan/prodi anda">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label>Kode Kelas: </label>
+                        <input type="teks" class="form-control" placeholder="Masukkan kode kelas anda">
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label>Tahun Masuk: </label>
+                        <select class="form-control">
+                            <option>Pilih</option>
+                            <option value="2010">2010</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="alert alert-secondary">
+                <strong>
+                    <input type="checkbox" name="pernyataan1" value="pernyataan1">
+                    Data yang saya berikan merupakan data pribadi saya yang sebenarnya.                    <br>
+                    <input type="checkbox" name="pernyataan1" value="pernyataan1">
+                    Saya yakin dan menyetujui setiap jawaban yang telah saya berikan dalam formulir ini.
+                </strong>
+            </div>
+
+            <center>
+                <button type="submit" name="submit" class="btn btn-success">Daftar</button>
+                <button type="submit" name="submit" class="btn btn-secondary">Reset</button>
+            </center>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="container p-3 my-3 border" align="center">
+            <p class="text-muted">&copy; Dintaskiyya ~ 23051204004</p>
+        </div>
+    </footer>
+</body>
+
+</html>
